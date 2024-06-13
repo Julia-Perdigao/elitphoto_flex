@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+}
+
+body {
+    display: flex;
+   
+    font-family: "Quicksand", sans-serif;
+    background-color: black;
+}
+
+#elit-photo-link {
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#elit-photo-div {
+    margin-bottom: 30px;
+}
+
+#menu {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    width: 15.58%;
+    height: 100vh;
+    padding: 30px;
+}
+
+#redes-sociais {
+    list-style: none;
+    display: flex;
+}
+
+#redes-sociais svg {
+    width: 2em;
+    height: 2em;
+    margin: 10px 10px 0 0;
+    fill: white;
+    padding: 10px;
+}
+
+#fundo {
+    height: 100vh;
+    background-image: url(img_9.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fundo>div {
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+}
+
+#fundo h1 {
+    font-family: "Oswald", arial, sans-serif;
+    font-size: 64px;
+}
+
+#fundo p {
+    width: 800px;
+    margin: 0 auto;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+}
+
+#fundo button {
+    background-color: #df0e62;
+    border: 0;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin: 15px 30px;
+}
+
+#links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+#links>li {
+    margin-bottom: 15px;
+}
+
+#links {
+    margin-bottom: 30px;
+}
+
+.cor-rosa {
+    color: #df0e62 !important;
+}
+
+#imagens {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.imagem {
+    width: 33%;
+    overflow: hidden;
+}
+
+.imagem img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0.1em;
+    margin-top: 0%;
+    justify-content: space-between;
+}
+
+#Testimonial {
+    color: white;
+    text-align: center;
+    margin: 2em 0;
+}
+
+#Testimonial h2 {
+    margin: 1em 0;
+    font-family: "Oswald", arial, sans-serif;
+    font-size: 4rem;
+}
+
+#About-div {
+    position: relative;
+}
+
+#About-div img {
+    width: 10em;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+#About-div p {
+    width: 710px;
+    color: #808080;
+    margin: 0 auto;
+}
+
+#About-div h3 {
+    margin-bottom: 1em;
+}
+
+#Bolinhas {
+    display: flex;
+}
+
+#About-div .bolinha {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #808080;
+    margin-top: 1em;
+}
+
+#About-div #esquerda {
+    margin-left: 0;
+}
+
+#About-div #direita {
+    margin-right: 1em;
+    background-color: #df0e62 !important;
+}
+
+#About-div::after {
+    content: "<";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    left: 23%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+#About-div::before {
+    content: ">";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    left: 73%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+#Biography {
+    background-color: #1a1a1a;
+    color: #808080;
+    position: relative;
+    padding: 10% 20% 10% 30%;
+    /* top right bottom left */
+}
+
+/* Um pseudo-elemento CSS é uma palavra-chave adicionada a um seletor que permite que você estilize uma parte específica do elemento selecionado. */
+#Biography::before {
+    position: absolute;
+    content: "";
+    background-color: #df0e62;
+    width: 6%;
+    height: 5px;
+    top: 0;
+    left: 0;
+}
+
+#Biography h1,
+#Biography h2 {
+    color: white;
+    font-family: "Oswald", sans-serif !important;
+    font-weight: 500;
+}
+
+#Biography h1 {
+    font-size: 4em;
+}
+
+#Biography h2 {
+    font-size: 2em;
+}
+
+#Biography p {
+    margin-bottom: 1em;
+    line-height: 1.4;
+    color: gray;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#Biography span {
+    color: #df0e62;
+    cursor: pointer;
+}
+
+#Biography img {
+    width: 50%;
+    border-radius: .25em;
+}
+
+#CheckList {
+    display: flex;
+    margin-top: 2em;
+}
+
+#CheckList>div {
+    margin-right: 10em;
+}
+
+#CheckList li {
+    position: relative;
+    list-style: none;
+    padding-left: 1.5em;
+}
+
+#CheckList li::before {
+    position: absolute;
+    color: green;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: "\2714";
+}
+
+#CheckList ul>li {
+    color: #808080;
+}
+
+.Blog-Card{
+    display: flex;
+    margin: 0 auto 2em auto;
+    width: 43%;
+}
+
+.Blog-Card h2 {
+    color: white;
+    font-size: 1.45em;
+    font-family: "Oswald", arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+.Blog-Card p {
+    color: gray;
+    margin-bottom: 1em;
+    line-height: 1.7;
+}
+
+.Blog-Card p>span {
+    color: #df0e62;
+}
+
+.Blog-Card img {
+    width: 250px;
+    height: 200px;
+    margin-right: 2em;
+}
