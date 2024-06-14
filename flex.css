@@ -12,7 +12,7 @@ main {
 
 body {
     display: flex;
-   
+
     font-family: "Quicksand", sans-serif;
     background-color: black;
 }
@@ -290,7 +290,7 @@ body {
     color: #808080;
 }
 
-.Blog-Card{
+.Blog-Card {
     display: flex;
     margin: 0 auto 2em auto;
     width: 43%;
@@ -303,6 +303,7 @@ body {
     font-weight: 500;
     margin-bottom: .5em;
 }
+
 .Blog-Card p {
     color: gray;
     margin-bottom: 1em;
@@ -316,5 +317,120 @@ body {
 .Blog-Card img {
     width: 250px;
     height: 200px;
-    margin-right: 2em;
+    margin: 0 1em;
+}
+
+#Blog h1 {
+    color: white;
+    height: 40px;
+    margin-left: 28%;
+    margin-bottom: 7%;
+    margin-top: 5%;
+    font-family: "Oswald", arial, sans-serif;
+    font-size: 4.5em;
+    font-weight: 400;
+}
+
+#numerorosa {
+    color: white;
+    display: flex;
+    margin-left: 40%;
+}
+
+#numerorosa li {
+    padding: 5px;
+    list-style: none;
+    height: 40px;
+    width: 40px;
+    color: #df0e62;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: all .5s;
+    cursor: pointer;
+    margin-bottom: 6%;
+    margin-top: 5%;
+}
+
+#numerorosa li span {
+    color: gray;
+}
+
+#numerorosa li:hover {
+    color: white;
+    background-color: #df0e62;
+}
+
+#Contact {
+    color: white;
+    background-color: #1a1a1a;
+    color: #808080;
+    position: relative;
+    padding: 10% 20% 10% 30%;
+}
+
+#Contact::before {
+    position: absolute;
+    content: "";
+    background-color: #df0e62;
+    width: 6%;
+    height: 5px;
+    top: 0;
+    left: 0;
+}
+
+#Contact h1 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1em;
+    font-size: 4em;
+}
+
+#Contact form {
+    width: 100%;
+}
+
+#Contact form>div {
+    display: flex;
+    margin: 1px;
+    width: 100%;
+}
+
+#Contact form>div>div {
+    margin: 1px;
+    width: 100%;
+}
+
+#Contact form label {
+    display: block;
+    color: white;
+    margin-bottom: .5em;
+}
+
+#Contact input,
+#Contact textarea {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 100%;
+    height: 2.5em;
+    margin-bottom: .75em;
+}
+
+#Contact textarea {
+    height: auto;
+}
+
+#Contact button {
+    background-color: #df0e62;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 2em;
+    cursor: pointer;
 }
